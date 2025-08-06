@@ -738,6 +738,22 @@ video {
   flex: 1 1 0%;
 }
 
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn .4s ease-in-out forwards;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1147,6 +1163,22 @@ video {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.animate-1 {
+  animation-delay: 100ms;
+}
+
+.animate-2 {
+  animation-delay: 200ms;
+}
+
+.animate-3 {
+  animation-delay: 300ms;
+}
+
+.animate-4 {
+  animation-delay: 400ms;
 }
 
 .\*\:col-start-1 > * {
